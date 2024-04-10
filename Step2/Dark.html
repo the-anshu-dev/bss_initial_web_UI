@@ -1,0 +1,2602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Dark Admin Panel</title>
+    <meta name="robots" content="noindex, follow" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- CSS 
+    ============================================ -->
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/slick.css">
+    <link rel="stylesheet" href="assets/css/vendor/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/vendor/aos.css">
+    <link rel="stylesheet" href="assets/css/plugins/feature.css">
+    <!-- Style css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Preloading Style  -->
+    <style>
+        
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans:400,700);
+
+
+
+html{
+  font-family: 'Roboto Mono', monospace;
+  background: #3c3c3c;
+  height: 100%;
+}
+
+#loading
+{
+    background: #3c3c3c url(preloader.gif) no-repeat center center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    height: 100%;
+    
+}
+.redanshu,#red, #sred 
+{
+    color: #999;
+}
+#red:hover, #sred:hover, .redanshu:hover
+{
+    color: #FD4520;
+}
+
+    </style>
+</head>
+
+<body class="template-color-1 spybody" data-spy="scroll" data-target=".navbar-example2" data-offset="70">
+  
+
+    <!-- ............................................  -->
+
+    <!-- Preloading...  -->
+    <div id="loading"></div>
+    <script>
+        var l=document.getElementById("loading");
+          window.addEventListener("load",function(){
+          l.style.display="none";
+          });
+</script>
+ <!-- ...................................................  -->
+
+<!-- Preloader Testing : Irrelevant lines  -->
+
+
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/3YWaSYcNDAA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3YWaSYcNDAA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3YWaSYcNDAA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3YWaSYcNDAA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3YWaSYcNDAA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3YWaSYcNDAA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3YWaSYcNDAA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+
+
+<!-- .........................................  -->
+  
+    <!-- Start Header -->
+    <header class="rn-header haeder-default black-logo-version header--fixed header--sticky">
+        <div class="header-wrapper rn-popup-mobile-menu m--0 row align-items-center">
+            <!-- Start Header Left -->
+            <div class="col-lg-2 col-6">
+                <div class="header-left">
+                    <div class="logo" style="border:2px solid rgba(255, 255, 255, 0.109) ; border-radius:30px; padding-top: 5px; padding-bottom: 4px;">
+                        <a href="https://www.bssitm.com/" target="_blank" label="BSSITM">&#160;
+                            <img src="assets/images/BSSITM.png" alt="logo"> &#160;
+                            <a href="https://chat.whatsapp.com/BTs3y2iQI3G7zMP8bgn3LZ" target="_blank" label="Youtube">
+                                <img src="assets/images/codeTechSociety.png" alt="logo">&#160;</a>
+                            <a href="Khushi Donation/index.html" target="_blank" label="Khushi Donation"><img src="assets/images/Khushi.png" alt="logo">&#160;
+                        </a>
+                            <a href="https://code-village07.github.io/Avinya-Classes/" target="_blank" label="Avinya Classes"><img src="assets/images/avinyalogo.png" alt="logo">&#160;&#160;
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- End Header Left -->
+
+
+
+            <!-- Start Header Center -->
+            <div class="col-lg-10 col-6">
+                <div class="header-center">
+                    <nav id="sideNav" class="mainmenu-nav navbar-example2 d-none d-xl-block">
+                        <!-- Start Mainmanu Nav -->
+                        <ul class="primary-menu nav nav-pills">
+                            <li class="nav-item"><a class="nav-link smoth-animation active" href="#home">Home</a></li>
+                            <li class="nav-item"><a class="nav-link smoth-animation" href="#features">Features</a></li>
+                            <li class="nav-item"><a class="nav-link smoth-animation" href="#portfolio">Funtura</a></li>
+                            <li class="nav-item"><a class="nav-link smoth-animation" href="#resume">Resume</a></li>
+                            <li class="nav-item"><a class="nav-link smoth-animation" href="#clients">Coding</a></li>
+                            <li class="nav-item"><a class="nav-link smoth-animation" href="#blog">Blog</a></li>
+                            <li class="nav-item"><a class="nav-link smoth-animation" href="#contacts">Contact</a></li>
+                            <li class="nav-item"><a href="Light.html"><img src="assets/GSUN.png" style="width: 50px; margin-top:-12px;"></a></li>
+                        </ul>
+                        <!-- End Mainmanu Nav -->
+
+
+
+                     </nav>
+                    <!-- Start Header Right  -->
+                    <div class="header-right">
+                        <a class="rn-btn" target="_blank" href="https://www.youtube.com/c/codevillage"><span>Go NOW</span></a>
+                        <div class="hamberger-menu d-block d-xl-none">
+                            <i id="menuBtn" class="feather-menu humberger-menu"></i>
+                        </div>
+                        <div class="close-menu d-block">
+                            <span class="closeTrigger">
+                            <i data-feather="x"></i>
+                        </span>
+                        </div>
+                    </div>
+                    <!-- End Header Right  -->
+
+                </div>
+            </div>
+            <!-- End Header Center -->
+        </div>
+    </header>
+    <!-- End Header Area -->
+
+
+
+
+
+
+
+
+    <!-- Start Popup Mobile Menu  -->
+    <div class="popup-mobile-menu">
+        <div class="inner">
+            <div class="menu-top">
+                <div class="menu-header">
+
+                     <!-- &#160; &#160; &#160;  &#160; &#160; &#160; &#160;  &#160; &#160; <img src="assets/images/CV.png" alt="Tap to Feedback" style="width: 85px;">
+                    </a> -->
+                    <a href="mailto:anshuchaurasia210@gmail.com, khushidonation7815@gmail.com" >
+                        <p class="discription"><img src="assets/Attender2.png" alt="" style="width:100%; margin-top: -10px; margin-left: 25px; "></p></a>
+    
+                        <div class="close-button">
+                            <button class="close-menu-activation close"><i data-feather="x"></i></button>
+                        </div>
+                    </div>
+                    <!-- <hr color="black"> -->
+                </div>
+
+
+
+             <div class="content" style="margin-top: -10px;">
+                <ul class="primary-menu nav nav-pills">
+                         
+                    <li class="nav-item"><a class="nav-link smoth-animation active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link smoth-animation" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link smoth-animation" href="#portfolio">Funtura</a></li>
+                    <li class="nav-item"><a class="nav-link smoth-animation" href="#resume">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link smoth-animation" href="#clients">Coding</a></li>
+                    <li class="nav-item"><a class="nav-link smoth-animation" href="#blog">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link smoth-animation" href="#contacts">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link smoth-animation" href="Light.html" ><img src="assets/GSUN.png" style="width: 50px; margin-top:-12px;"></a></li>
+                </ul>
+
+
+
+                <!-- social sharea area -->
+                <div class="social-share-style-1 mt--40">
+                    <span class="title">find me</span>
+                    <ul class="social-share d-flex liststyle">
+                        <li class="facebook"><a href="https://www.facebook.com/profile.php?id=100015280038079" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook">
+                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                                </svg></a>
+                        </li>
+                        <li class="instagram"><a href="https://www.instagram.com/_p_a_n_d_e_m_i_c_/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                </svg></a>
+                        </li>
+                        <li class="linkedin"><a href="https://www.linkedin.com/in/anshu-chaurasia-089576255/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- end -->
+            </div>
+        </div>
+    </div>
+    <!-- End Popup Mobile Menu  -->
+
+
+
+
+    <main class="main-page-wrapper">
+
+        <!-- Start Slider Area -->
+        <div id="home" class="rn-slider-area">
+            <div class="slide slider-style-1">
+                <div class="container">
+                    <div class="row row--30 align-items-center">
+                        <div class="order-2 order-lg-1 col-lg-7 mt_md--50 mt_sm--50 mt_lg--30">
+                            <div class="content">
+                                <div class="inner">
+                                    <span class="subtitle">Welcome to our College</span>
+                                    <h1 class="title">Hi, I’m <span>Bssitian</span><br>
+                                        <span class="header-caption" id="page-top">
+                                            <!-- type headline start-->
+                                            <span class="cd-headline clip is-full-width">
+                                                <span>a </span>
+                                        <!-- ROTATING TEXT -->
+                                          <span class="cd-words-wrapper">
+                                            <b class="is-visible">Student</b>
+                                            <b class="is-hidden">Teacher</b>
+                                            <b class="is-hidden">Friend.</b>
+                                          </span>
+                                 </span>
+                                        <!-- type headline end -->
+                                        </span>
+                                    </h1>
+
+                                    <div>
+                                        <p class="description">As being the member of BSSITM, its my pleasure to mark 
+                                            Attendence by <mark style="background-color: transparent ;  border-bottom: 2px solid rgb(252, 252, 0) ;" >Attender Web.</mark><br>
+                                            <span style="margin-left:99px;"> We are one and we have power to change world, </span> <br>
+                                            <b>it will happen...</b><mark style="background-color: transparent; border-bottom: 2px solid rgb(0, 252, 147); "> When you present daily and learn something new to grow.</mark></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6 col-xl-6 col-md-6 col-sm-6 col-12">
+                                        <div class="social-share-inner-left">
+                                            <span class="title">find me</span>
+                                            <ul class="social-share d-flex liststyle">
+                                            <li class="facebook"><a  href="https://www.facebook.com/profile.php?id=100015280038079" target="_blank"><i  id="fb-hover" style="width: 100%;" data-feather="facebook"></i></a>
+                                            </li>
+                                              <li class="instagram"><a href="https://www.instagram.com/_p_a_n_d_e_m_i_c_/" target="_blank"><i  id="insta-hover" style="width: 100%;" data-feather="instagram"></i></a>
+                                             </li>
+                                            <li class="linkedin" ><a href="https://twitter.com/iamnot07" target="_blank"><i id="linkdin-hover" style="width: 100%;" data-feather="twitter"></i></a>
+                                            </li>
+                                        </ul>
+                                         </div>
+                                        </div>
+                                    <div class="col-lg-6 col-xl-6 col-md-6 col-sm-6 col-12 mt_mobile--30">
+                                        <div class="skill-share-inner">
+                                            <span class="title">Affilated By</span>
+                                            <ul class="skill-share d-flex liststyle social-share">
+                                                <a href="https://www.aicte-india.org/" target="_blank"><li><img src="assets/images/icons/AICTE.png" alt="Icons Images" ></li></a>
+                                                <a href="https://aktu.ac.in/" target="_blank"><li><img src="assets/images/icons/AKTU.png" alt="Icons Images"></li></a>
+                                                <a href="https://bteup.ac.in/webapp/home.aspx" target="_blank"><li><img src="assets/images/icons/BTEUPD.png" alt="Icons Images"></li></a>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="order-1 order-lg-2 col-lg-5">
+                            <div class="thumbnail">
+                                <div class="inner">
+                                    <img src="assets/new logo2.png" alt="Personal Portfolio Images" style="padding: 100px 20px 20px 20px; border-radius:20px; ">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Slider Area -->
+
+        <!-- Start Service Area -->
+        <div class="rn-service-area rn-section-gap section-separator" id="features">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title text-left" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true">
+                            <span class="subtitle">F e a t u r e s</span>
+                            <h2 class="title">What I Get</h2>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row row--25 mt_md--10 mt_sm--10">
+
+                    <!-- Start Single Service -->
+                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12     mt--50 mt_md--30 mt_sm--30  ">
+                        <div class="rn-service">
+                            <div class="inner">
+                                <div class="icon">
+                                    <i data-feather="menu"></i>
+                                </div>
+                                <div class="content" >
+                                    <h4 class="title"><a href="#">Profile</a></h4>
+                                    <p class="description">Here is my all given data . . . <br>Customize your mail. . .  <br>  Wants to Correct. . ?</p></p>
+                                    <a class="read-more-button" href="#"><i class="feather-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <a class="over-link" href="ComingSoon/text.html"></a>
+                        </div>
+                    </div>
+                    <!-- End SIngle Service -->
+                    <!-- Start Single Service -->
+                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12      mt--50 mt_md--30 mt_sm--30">
+                        <div class="rn-service">
+                            <div class="inner">
+                                <div class="icon">
+                                    <i data-feather="check-square"></i>
+                                    
+                                </div>
+                                <div class="content">
+                                    <h4 class="title"><a href="timerweb.html">Attendance</a></h4>
+                                    <p class="description">Let's mark your attendance . . . . <br>Be present daily . . . . <br> Am i Present. . ?</p> 
+                                    <a class="read-more-button" href="timerweb.html"><i class="feather-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <a class="over-link" href="timerweb.html"></a>
+                            
+                        </div>
+                    </div>
+                    <!-- End SIngle Service -->
+                    <!-- Start Single Service -->
+                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="500" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12      mt--50 mt_md--30 mt_sm--30">
+                        <div class="rn-service">
+                            <div class="inner">
+                                <div class="icon">
+                                    <i data-feather="slack"></i>
+                                </div>
+                                <div class="content">
+                                    <h4 class="title"><a href="#">BSSGI College </a></h4>
+                                    <p class="description">Labs, Hostel, Library. . .<br>Sports, Ground, Events . . . <br>Do You Want Admission . . ?</p>
+                                    <a class="read-more-button" href="#"><i class="feather-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <a class="over-link" href="https://www.bssitm.com/" target="_blank"></a>
+                        </div>
+                    </div>
+                    <!-- End SIngle Service -->
+
+
+
+
+
+                    <!-- Start Single Service -->
+                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--50 mt_md--30 mt_sm--30">
+                        <div class="rn-service">
+                            <div class="inner">
+                                <div class="icon">
+                                    <i data-feather="award"></i>
+                                </div>
+                                <div class="content">
+                                    <h4 class="title"><a href="#">ERP</a></h4>
+                                    <p class="description">Get Your Result . . . <br>Get Your Details. . .<br>Have any issues . . ?</p>
+                                    <a class="read-more-button" href="#"><i class="feather-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <a class="over-link" href="ERP_DARK.html"></a>
+                        </div>
+                    </div>
+                    <!-- End SIngle Service -->
+
+
+                    <!-- Start Single Service -->
+                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--50 mt_md--30 mt_sm--30">
+                        <div class="rn-service">
+                            <div class="inner">
+                                <div class="icon">
+                                    <i data-feather="gift"></i>
+                                </div>
+                                <div class="content">
+                                    <h4 class="title"><a href="#" >Syllabus</a></h4>   
+                                    <p class="description">Engineering syllabus. . . <br>Diploma syllabus. . .<br>Pharma syllabus. . ?</p>
+                                    <a class="read-more-button" href="#" target="_blank"><i class="feather-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <a class="over-link" href="syllabus_dark.html" ></a>
+                        </div>
+                    </div>
+                    <!-- End SIngle Service -->
+
+
+                    <!-- Start Single Service -->
+                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="500" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--50 mt_md--30 mt_sm--30">
+                        <div class="rn-service">
+                            <div class="inner">
+                                <div class="icon">
+                                    <i data-feather="twitch"></i>
+                                </div>
+                                <div class="content">
+                                    <h4 class="title"><a href="#">Result</a></h4>
+                                    <p class="description">Get detail . . . <br> Know your result . . . <br> Download result status. . ? 
+                                    </p>
+                                    <a class="read-more-button" href="#"><i class="feather-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <a class="over-link" href="result_dark.html"></a>
+                        </div>
+                    </div>
+                    <!-- End SIngle Service -->
+
+                </div>
+            </div>
+        </div>
+        <!-- End Service Area  -->
+
+        <!-- Start Portfolio Area -->
+        <div class="rn-portfolio-area rn-section-gap section-separator" id="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title text-center" >
+                            <span class="subtitle" style="letter-spacing:0.1em ;">There is some fun for you to update you</span>
+                            <h2 class="title">Funtura</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row row--25 mt--10 mt_md--10 mt_sm--10">
+                    <!-- Start Single Portfolio -->
+                    <div data-aos="fade-up" data-aos-delay="100" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
+                        <div class="rn-portfolio" data-toggle="modal" data-target="#exampleModalCenter">
+                            <div class="inner">
+                                <div class="thumbnail">
+                                    <a href="FeaturesSection/firework-simulator-v2/dist/index.html" target="_blank">
+                                        <img src="assets/images/Dribbble/1.gif" alt="Personal Portfolio Images">
+                                    </a>
+                                </div>
+                                <div class="content">
+                                    <div class="category-info">
+                                        <div class="category-list">
+                                            <a href="FeaturesSection/firework-simulator-v2/dist/index.html" target="_blank">Firework Simulator</a>
+                                        </div>
+                                        <div class="meta">
+                                            <span><a href="FeaturesSection/firework-simulator-v2/dist/index.html" target="_blank"><i class="feather-heart"></i></a>
+                                                33.8K</span>
+                                        </div>
+                                    </div>
+                                    <h4 class="title"><a href="FeaturesSection/firework-simulator-v2/dist/index.html" target="_blank">Creative FireWork Simulator and Its Modes<i
+                                                class="feather-arrow-up-right"></i></a></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Portfolio -->
+
+                    <!-- Start Single Portfolio -->
+                    <div data-aos="fade-up" data-aos-delay="300" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
+                        <div class="rn-portfolio" data-toggle="modal" data-target="#exampleModalCenter">
+                            <div class="inner">
+                                <div class="thumbnail">
+                                    <a href="FeaturesSection/hack-a-digital-card-game/dist/index.html" target="_blank">
+                                        <img src="assets/images/Dribbble/2.gif" alt="Personal Portfolio Images">
+                                    </a>
+                                </div>
+                                <div class="content">
+                                    <div class="category-info">
+                                        <div class="category-list">
+                                            <a href="FeaturesSection/hack-a-digital-card-game/dist/index.html" target="_blank">Hack- Digital Card</a>
+                                        </div>
+                                        <div class="meta">
+                                            <span><a href="FeaturesSection/hack-a-digital-card-game/dist/index.html" target="_blank"><i class="feather-heart"></i></a>
+                                                3.2M</span>
+                                        </div>
+                                    </div>
+                                    <h4 class="title"><a href="FeaturesSection/hack-a-digital-card-game/dist/index.html" target="_blank">Hack - A Digital Card Game
+                                     With Your Brain<i class="feather-arrow-up-right"></i></a></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Portfolio -->
+
+                    <!-- Start Single Portfolio -->
+                    <div data-aos="fade-up" data-aos-delay="500" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
+                        <div class="rn-portfolio" data-toggle="modal" data-target="#exampleModalCenter">
+                            <div class="inner">
+                                <div class="thumbnail">
+                                    <a href="FeaturesSection/cub-n-puppuzzle-game-demo/dist/index.html" target="_blank">
+                                        <img src="assets/images/Dribbble/3.gif" alt="Personal Portfolio Images">
+                                    </a>
+                                </div>
+                                <div class="content">
+                                    <div class="category-info">
+                                        <div class="category-list">
+                                            <a href="FeaturesSection/cub-n-puppuzzle-game-demo/dist/index.html" target="_blank">Cub-n-Pub</a>
+                                        </div>
+                                        <div class="meta">
+                                            <span><a href="FeaturesSection/cub-n-puppuzzle-game-demo/dist/index.html" target="_blank"><i class="feather-heart"></i></a>
+                                                19.8k</span>
+                                        </div>
+                                    </div>
+                                    <h4 class="title"><a href="FeaturesSection/cub-n-puppuzzle-game-demo/dist/index.html" target="_blank">Cub-n-Pub Puzzle Game | Develope Your Mind
+                                            <i class="feather-arrow-up-right"></i></a></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Portfolio -->
+ 
+                    <!-- Start Single Portfolio -->
+                    <div data-aos="fade-up" data-aos-delay="100" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
+                        <div class="rn-portfolio" data-toggle="modal" data-target="#exampleModalCenter">
+                            <div class="inner">
+                                <div class="thumbnail">
+                                    <a href="FeaturesSection/the-cube/dist/index.html" target="_blank">
+                                        <img src="assets/images/Dribbble/4.gif" alt="Personal Portfolio Images">
+                                    </a>
+                                </div>
+                                <div class="content">
+                                    <div class="category-info">
+                                        <div class="category-list">
+                                            <a href="FeaturesSection/the-cube/dist/index.html" target="_blank">The Cube</a>
+                                        </div>
+                                        <div class="meta">
+                                            <span><a href="FeaturesSection/the-cube/dist/index.html" target="_blank"><i class="feather-heart"></i></a>
+                                                10.6k</span>
+                                        </div>
+                                    </div>
+                                    <h4 class="title"><a href="FeaturesSection/the-cube/dist/index.html" target="_blank">The Cube | Break Your Record With Modes
+                                            <i class="feather-arrow-up-right"></i></a></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Portfolio -->
+
+                    <!-- Start Single Portfolio -->
+                    <div data-aos="fade-up" data-aos-delay="300" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
+                        <div class="rn-portfolio" data-toggle="modal" data-target="#exampleModalCenter">
+                            <div class="inner">
+                                <div class="thumbnail">
+                                    <a href="FeaturesSection/menja/dist/index.html" target="_blank">
+                                        <img src="assets/images/Dribbble/5.gif" alt="Personal Portfolio Images">
+                                    </a>
+                                </div>
+                                <div class="content">
+                                    <div class="category-info">
+                                        <div class="category-list">
+                                            <a href="FeaturesSection/menja/dist/index.html" target="_blank">Menja</a>
+                                        </div>
+                                        <div class="meta">
+                                            <span><a href="FeaturesSection/menja/dist/index.html" target="_blank"><i class="feather-heart"></i></a>
+                                                56.7k</span>
+                                        </div>
+                                    </div>
+                                    <h4 class="title"><a href="FeaturesSection/menja/dist/index.html" target="_blank">MENJA Game | Cut The Cube And Enjoy It<i
+                                                class="feather-arrow-up-right"></i></a></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Portfolio -->
+
+                    <!-- Start Single Portfolio -->
+                    <div data-aos="fade-up" data-aos-delay="500" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
+                        <div class="rn-portfolio" data-toggle="modal" data-target="#exampleModalCenter">
+                            <div class="inner">
+                                <div class="thumbnail">
+                                    <a href="FeaturesSection/memory-game/dist/index.html" target="_blank">
+                                        <img src="assets/images/Dribbble/6.gif" alt="Personal Portfolio Images">
+                                    </a>
+                                </div>
+                                <div class="content">
+                                    <div class="category-info">
+                                        <div class="category-list">
+                                            <a href="FeaturesSection/memory-game/dist/index.html" target="_blank">Memory Game</a>
+                                        </div>
+                                        <div class="meta">
+                                            <span><a href="FeaturesSection/memory-game/dist/index.html" target="_blank"><i class="feather-heart"></i></a>
+                                                11.5k</span>
+                                        </div>
+                                    </div>
+                                    <h4 class="title"><a href="FeaturesSection/memory-game/dist/index.html" target="_blank">Memory-Game | Sharp Your Memory Skill<i
+                                                class="feather-arrow-up-right"></i></a></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Portfolio -->
+                </div>
+            </div>
+        </div>
+        <!-- End portfolio Area -->
+
+        <!-- Start Resume Area -->
+        <div class="rn-resume-area rn-section-gap section-separator" id="resume">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title text-center">
+                            <span class="subtitle">2+ Years of Experience</span>
+                            <h2 class="title">My Resume</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt--45">
+                    <div class="col-lg-12">
+                        <ul class="rn-nav-list nav nav-tabs" id="myTabs" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="education-tab" data-toggle="tab" href="#education" role="tab" aria-controls="education" aria-selected="true">education</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="professional-tab" data-toggle="tab" href="#professional" role="tab" aria-controls="professional" aria-selected="false">professional
+                                    Skills</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="experience-tab" data-toggle="tab" href="#experience" role="tab" aria-controls="experience" aria-selected="false">experience</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="interview-tab" data-toggle="tab" href="#interview" role="tab" aria-controls="interview" aria-selected="false">Projects</a>
+                            </li>
+                        </ul>
+                        <!-- Start Tab Content Wrapper  -->
+                        <div class="rn-nav-content tab-content" id="myTabContents">
+                            <!-- Start Single Tab  -->
+                            <div class="tab-pane show active fade single-tab-area" id="education" role="tabpanel" aria-labelledby="education-tab">
+                                <div class="personal-experience-inner mt--40">
+                                    <div class="row">
+                                        <!-- Start Skill List Area  -->
+                                        <div class="col-lg-6 col-md-12 col-12">
+                                            <div class="content">
+                                                <span class="subtitle">2017 - 2024</span>
+                                                <h4 class="maintitle">Education Quality</h4>
+                                                <div class="experience-list ">
+
+                                                    <!-- Start Single List  -->
+                                                    <div class="resume-single-list" id="ani-bor-H">
+                                                        <div class="inner">
+                                                            <div class="heading">
+                                                                <div class="title">
+                                                                    <h4 > High School</h4>
+                                                                    <span style="letter-spacing: 0.1em;">Siddhartha Public School (2018)</span>
+                                                                </div>
+                                                                <div class="date-of-time">
+                                                                    <span>4.2/5</span>
+                                                                </div>
+                                                            </div>
+                                                            <p class="description">I've cleared my high school with
+                                                                <b>77.6%</b> &#160;which is affilated by <b><span>ICSE, New Delhi</span></b>. And i was the Vice-Captain of my School.
+                                                           </p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single List  -->
+
+                                                    <!-- Start Single List  -->
+                                                    <div class="resume-single-list" id="ani-bor-I">
+                                                        <div class="inner">
+                                                            <div class="heading">
+                                                                <div class="title">
+                                                                    <h4> Intermediate School</h4>
+                                                                    <span>Siddhartha Public School (2020)</span>
+                                                                </div>
+                                                                <div class="date-of-time">
+                                                                    <span>3.7/5</span>
+                                                                </div>
+                                                            </div>
+                                                            <p class="description">Securely cleared my 10+2 (Intermediate) with 
+                                                                having <b>77.4%</b> from Science side including <b>Computer and Maths.</b> And
+                                                                I was the Captain of my School.</p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single List  -->
+
+                                                    <!-- Start Single List  -->
+                                                    <div class="resume-single-list" id="ani-bor-G">
+                                                        <div class="inner">
+                                                            <div class="heading">
+                                                                <div class="title">
+                                                                    <h4>B.tech Graduation</h4>
+                                                                    <span>APJ Abdul Kalam Technical University (2020 - 2024)</span>
+                                                                </div>
+                                                                <div class="date-of-time">
+                                                                    <span>4.1/5</span>
+                                                                </div>
+                                                            </div>
+                                                            <p class="description"> Pursuing the B.tech with CSE branch and safely cleared 1st yr and 2nd year with having
+                                                                <b>82.94% and 74.64%</b> respectively.</p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single List  -->
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Skill List Area  -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Tab  -->
+
+                            <!-- Start Single Tab  -->
+                            <div class="tab-pane fade " id="professional" role="tabpanel" aria-labelledby="professional-tab">
+                                <div class="personal-experience-inner mt--40">
+                                    <div class="row row--40">
+
+                                        <!-- Start Single Progressbar  -->
+                                        <div class="col-lg-6 col-md-6 col-12">
+                                            <div class="progress-wrapper">
+                                                <div class="content">
+                                                    <span class="subtitle">Features</span>
+                                                    <h4 class="maintitle">Design Skill</h4>
+                                                    <!-- Start Single Progress Charts -->
+                                                    <div class="progress-charts">
+                                                        <h6 class="heading heading-h6" style="color: #00ffbb;">KINEMASTER</h6>
+                                                        <div class="progress">
+                                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay=".3s" role="progressbar" style="width: 100%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span
+                                                            class="percent-label">100%</span></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single Progress Charts -->
+
+                                                    <!-- Start Single Progress Charts -->
+                                                    <div class="progress-charts">
+                                                        <h6 class="heading heading-h6" style="color: #00ffbb;">CANVA</h6>
+                                                        <div class="progress">
+                                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.6s" data-wow-delay=".4s" role="progressbar" style="width: 95%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span
+                                                            class="percent-label">95%</span></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single Progress Charts -->
+
+                                                    <!-- Start Single Progress Charts -->
+                                                    <div class="progress-charts">
+                                                        <h6 class="heading heading-h6" style="color: #00ffbb;">COREL DRAW</h6>
+                                                        <div class="progress">
+                                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay=".5s" role="progressbar" style="width: 60%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span
+                                                            class="percent-label">60%</span></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single Progress Charts -->
+
+                                                    <!-- Start Single Progress Charts -->
+                                                    <div class="progress-charts">
+                                                        <h6 class="heading heading-h6" style="color: #00ffbb;">3D PAINT</h6>
+                                                        <div class="progress">
+                                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay=".6s" role="progressbar" style="width: 70%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span
+                                                            class="percent-label">70%</span></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single Progress Charts -->
+
+                                                    <!-- Start Single Progress Charts -->
+                                                    <div class="progress-charts">
+                                                        <h6 class="heading heading-h6" style="color: #00ffbb;">DESIGN</h6>
+                                                        <div class="progress">
+                                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.9s" data-wow-delay=".7s" role="progressbar" style="width: 90%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span
+                                                            class="percent-label">90%</span></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single Progress Charts -->
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Single Progressbar  -->
+
+                                        <!-- Start Single Progressbar  -->
+                                        <div class="col-lg-6 col-md-6 col-12 mt_sm--60">
+                                            <div class="progress-wrapper">
+                                                <div class="content">
+                                                    <span class="subtitle">Features</span>
+                                                    <h4 class="maintitle">Development Skill</h4>
+                                                    <!-- Start Single Progress Charts -->
+                                                    <div class="progress-charts">
+                                                        <h6 class="heading heading-h6" style="color: #ffd500;">HTML</h6>
+                                                        <div class="progress">
+                                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay=".3s" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span
+                                                            class="percent-label">85%</span></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single Progress Charts -->
+
+                                                    <!-- Start Single Progress Charts -->
+                                                    <div class="progress-charts">
+                                                        <h6 class="heading heading-h6" style="color: #ffd500;">CSS</h6>
+                                                        <div class="progress">
+                                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.6s" data-wow-delay=".4s" role="progressbar" style="width: 80%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span
+                                                            class="percent-label">80%</span></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single Progress Charts -->
+
+                                                    <!-- Start Single Progress Charts -->
+                                                    <div class="progress-charts">
+                                                        <h6 class="heading heading-h6" style="color: #ffd500;">PYTHON</h6>
+                                                        <div class="progress">
+                                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay=".5s" role="progressbar" style="width: 90%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span
+                                                            class="percent-label">90%</span></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single Progress Charts -->
+
+                                                    <!-- Start Single Progress Charts -->
+                                                    <div class="progress-charts">
+                                                        <h6 class="heading heading-h6" style="color: #ffd500;">JAVASCRIPT</h6>
+                                                        <div class="progress">
+                                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay=".6s" role="progressbar" style="width: 75%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span
+                                                            class="percent-label">75%</span></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single Progress Charts -->
+
+                                                    <!-- Start Single Progress Charts -->
+                                                    <div class="progress-charts">
+                                                        <h6 class="heading heading-h6" style="color: #ffd500;">C/C++/C#</h6>
+                                                        <div class="progress">
+                                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.9s" data-wow-delay=".7s" role="progressbar" style="width: 70%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span
+                                                            class="percent-label">70%</span></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single Progress Charts -->
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Single Progressbar  -->
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Tab  -->
+
+                            <!-- Start Single Tab  -->
+                            <div class="tab-pane fade" id="experience" role="tabpanel" aria-labelledby="experience-tab">
+                                <div class="personal-experience-inner mt--40">
+                                    <div class="row">
+                                        <!-- Start Skill List Area  -->
+                                        <div class="col-lg-6 col-md-12 col-12">
+                                            <div class="content">
+                                                <span class="subtitle">2019 - 2022</span>
+                                                <h4 class="maintitle">Experience</h4>
+                                                <div class="experience-list">
+
+                                                    <!-- Start Single List  -->
+                                                    <div class="resume-single-list"  id="ani-bor-py">
+                                                        <div class="inner">
+                                                            <div class="heading">
+                                                                <div class="title">
+                                                                    <h4>Python with AI and ML (NIIT)</h4>
+                                                                    <span>One Year (2022)</span>
+                                                                </div>
+                                                                <div class="date-of-time">
+                                                                    <span>4.30/5</span>
+                                                                </div>
+                                                            </div>
+                                                            <p class="description"> Cleared <b>Python</b> concept.  <br>
+                                                                Got Knowledge of <b>Numpy, Matplotlib, Pandas and Django,</b> etc. <br>
+                                                                Plotting predictabele graph using <b>Matplotlib</b> library. <br>
+                                                                And <b> More</b>.....
+                                                                </p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single List  -->
+
+                                                    <!-- Start Single List  -->
+                                                    <div class="resume-single-list" id="ani-bor-Java">
+                                                        <div class="inner">
+                                                            <div class="heading">
+                                                                <div class="title">
+                                                                    <h4> JAVA</h4>
+                                                                    <span>Two Year (2018-2020)</span>
+                                                                </div>
+                                                                <div class="date-of-time">
+                                                                    <span>4.50/5</span>
+                                                                </div>
+                                                            </div>
+                                                            <p class="description">Cleared <b>OOPs</b> concept <br>
+                                                                Having Knowledge of <b>Functions and Overloading</b> function. <br>
+                                                                Good command on <b>Java Inheritance</b> <br>
+                                                                Best command on <b>Loops, recursion, API,</b> etc.</p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single List  -->
+
+                                                    <!-- Start Single List  -->
+                                                    <div class="resume-single-list" id="ani-bor-Society">
+                                                        <div class="inner">
+                                                            <div class="heading">
+                                                                <div class="title">
+                                                                    <h4>STES and Code.Tech.Society</h4>
+                                                                    <span>Two year (2019-2023)</span>
+                                                                </div>
+                                                                <div class="date-of-time">
+                                                                    <span>4.80/5</span>
+                                                                </div>
+                                                            </div>
+                                                            <p class="description"><b> Coordinator</b> of STES society under BSSITM guidance, <br>
+                                                                <b>Founder</b> of <u>Code.Tech.Society</u> under self guidance, <br>
+                                                                <b>Founder and Developer</b> of Khushi Foundation(P78)</p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single List  -->
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                       
+                            <!-- Start Single Tab  -->
+                            <div class="tab-pane fade" id="interview" role="tabpanel" aria-labelledby="interview-tab">
+                                <div class="personal-experience-inner mt--40">
+                                    <div class="row">
+                                        <!-- Start Skill List Area  -->
+                                        <div class="col-lg-6 col-md-12 col-12">
+                                            <div class="content">
+                                                <span class="subtitle">2003 - Present</span>
+                                                <h4 class="maintitle">Projects and Values</h4>
+                                                <div class="experience-list">
+
+                                                    <!-- Start Single List  -->
+                                                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-once="true" class="resume-single-list" id="ani-bor-P78">
+                                                        <div class="inner">
+                                                            <div class="heading">
+                                                                <div class="title">
+                                                                    <h4>Khushi Donation Project(P78)</h4>
+                                                                    <span>Activated (2021-2022)</span>
+                                                                </div>
+                                                                <div class="date-of-time">
+                                                                    <span>4.30/5</span>
+                                                                </div>
+                                                            </div>
+                                                            <p class="description">Its a Donation website, who supports poors and orphans by donating FOODs, CLOTHEs, ect with money got by website and It's made up of <b>HTML, CSS, JS</b>
+                                                            , it also use <b>Razerpay Gateway</b> to accept payment, by which we can set the target payment.</p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single List  -->
+
+                                                    <!-- Start Single List  -->
+                                                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="500" data-aos-once="true" class="resume-single-list" id="ani-bor-P15">
+                                                        <div class="inner">
+                                                            <div class="heading">
+                                                                <div class="title">
+                                                                    <h4>Avinya-Classes Project(P15)</h4>
+                                                                    <span>Activated (2021-2022)</span>
+                                                                </div>
+                                                                <div class="date-of-time">
+                                                                    <span>4.5/5</span>
+                                                                </div>
+                                                            </div>
+                                                            <p class="description">Avinya, which means <b>INNOVATION</b>, It is made up for providing <b>Online/Offline</b> classes with home tutor upto 8th class, also we offer the Courses such as - JAVA, Web-Design, Python, C/C++, etc. 
+                                                                we will communicate with the Feedback form, and get users details by <b>Registration Forms</b> which is mention in the website.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single List  -->
+
+                                                    <!-- Start Single List  -->
+                                                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="700" data-aos-once="true" class="resume-single-list" id="ani-bor-P87">
+                                                        <div class="inner">
+                                                            <div class="heading">
+                                                                <div class="title">
+                                                                    <h4>MILO-Robot Project(P87)</h4>
+                                                                    <span>Activated (2022)</span>
+                                                                </div>
+                                                                <div class="date-of-time">
+                                                                    <span>4.35/5</span>
+                                                                </div>
+                                                            </div>
+                                                            <p class="description"> <b>MILO is the Robot</b> who "Give response your queries and can remotely/voice controlled, also has Object Detection features and it sense the FIRE and Spread Water on that place. Also has many features such as - 360-Rotation, Music Player, Object Detection Mode, Human Follow mode and more". </p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single List  -->
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Skill List Area  -->
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Tab  -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Resume Area -->
+
+
+
+        <!-- Start Testimonia Area  -->
+        <div class="rn-testimonial-area rn-section-gap section-separator" id="testimonial">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title text-center">
+                            <span class="subtitle">Our Team Member</span>
+                            <h2 class="title">Testimonial</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="testimonial-activation testimonial-pb mb--30">
+                            <!-- Start Single testiminail -->
+                            <div class="testimonial mt--50 mt_md--40 mt_sm--40">
+                                <div class="inner">
+                                    <div class="card-info">
+                                        <div class="card-thumbnail">
+                                            <img src="assets/images/3d/Anshu.png" alt="Testimonial-image">
+                                        </div>
+                                        <div class="card-content">
+                                            <span class="subtitle mt--10">Rain</span>
+                                            <h3 class="title">Anshu Chaurasia</h3>
+                                            <span class="designation">Founder and Developer</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-description">
+                                        <div class="title-area">
+                                            <div class="title-info">
+                                                <h3 class="title">Logistic Developer</h3>
+                                                <span class="date">via Upwork - Dec 3, 2022 - March 5, 2023</span>
+                                            </div>
+                                            <div class="rating">
+                                                <img src="assets/images/icons/rating.png" alt="rating-image">
+                                                <img src="assets/images/icons/rating.png" alt="rating-image">
+                                                <img src="assets/images/icons/rating.png" alt="rating-image">
+                                                <img src="assets/images/icons/rating.png" alt="rating-image">
+                                                <img src="assets/images/icons/rating.png" alt="rating-image">
+                                            </div>
+                                        </div>
+                                        <div class="seperator"></div>
+                                        <p class="discription">
+                                            &#x2022; He is the 
+                                            <b><u>Founder and Developer</b></u> of - <br> 
+                                            &#160;&#160;&#160;1. <a href="Dark.html" class="redanshu">Attender-Webiste</a>, 
+                                            <br>&#160;&#160;&#160;2. <a href="https://code-village07.github.io/Avinya-Classes/" target="_blank" class="redanshu">Avinya-Classes</a>, 
+                                            <br>&#160;&#160;&#160;3. <a href="http://127.0.0.1:5501/Step2/Khushi%20Donation/index.html" target="_blank" class="redanshu">Khushi-Donation</a>, 
+                                            <br>&#160;&#160;&#160;4. <a href="https://chat.whatsapp.com/BTs3y2iQI3G7zMP8bgn3LZ" target="_blank" class="redanshu">Code.Tech.Society</a>, 
+                                            <br>&#160;&#160;&#160;5. <a href="https://chat.whatsapp.com/LWU5zX6XIBV8qZ82cYx7MB" target="_blank" class="redanshu">S.T.E.S Society[BSSITM]</a>,  
+                                            <br>&#160;&#160;&#160;6. <a href="ComingSoon/text.html" target="_blank" class="redanshu">MILO-Robot Project</a>.  
+                                            <br> &#160;with the help of
+                                            their team by using <b>HTML5, CSS, Java Script and Bootstrap</b> and some external js file.<br>&#x2022; He has a <b>2yr experience of Web Design</b>.
+                                            <br> <br><br><br> <a href="Khushi Donation/CV.html" target="_blank"><span id="red">Read more...
+                                                <i class="feather-arrow-right"></i></span></a>
+
+                                            
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--End Single testiminail -->
+                            <!-- Start Single testiminail -->
+                            <div class="testimonial mt--50 mt_md--40 mt_sm--40">
+                                <div class="inner">
+                                    <div class="card-info">
+                                        <div class="card-thumbnail">
+                                            <img src="assets/images/3d/swashtika.png" alt="Testimonial-image">
+                                        </div>
+                                        <div class="card-content">
+                                            <span class="subtitle mt--10">Sisila</span>
+                                            <h3 class="title">Swashtika </h3>
+                                            <span class="designation">Web-Designer</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-description">
+                                        <div class="title-area">
+                                            <div class="title-info">
+                                                <h3 class="title">Web-Designer</h3>
+                                                <span class="date">Via Upwork - Dec 3, 2022 - March 5, 2023</span>
+                                            </div>
+                                            <div class="rating">
+                                                <img src="assets/images/icons/rating.png" alt="rating-image">
+                                                <img src="assets/images/icons/rating.png" alt="rating-image">
+                                                <img src="assets/images/icons/rating.png" alt="rating-image">
+                                                <img src="assets/images/icons/rating.png" alt="rating-image">
+                                                <!-- <img src="assets/images/icons/rating.png" alt="rating-image"> -->
+                                            </div>
+                                        </div>
+                                        <div class="seperator"></div>
+                                        <p class="discription">
+                                            &#x2022; She is the <b><u>Web-Designer</u></b> and she design the website layout by the refernce of Youtube, Github, Codepen etc.
+                                            <br> &#x2022; She also use Feather, Iconscout website for icons and all logos. <br>
+                                            &#x2022; Also design logos of coding and provide extra links and script of datas.
+                                            <br> <br><br><br><br><br><br><br> <a href="Khushi Donation/SwashtikaCV.html" target="_blank"><span id="sred">Read More... <i class="feather-arrow-right"></i></span>
+                                                </a>
+                                        
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--End Single testiminail -->
+                            <!-- Start Single testiminail -->
+                           
+                            <!--End Single testiminail -->
+
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Testimonia Area  -->
+
+
+
+        <!-- Start Client Area -->
+        <div class="rn-client-area rn-section-gap section-separator" id="clients">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title">
+                           <span class="subtitle">Popular Language To Learn</span>
+                            <h2 class="title">Awesome Coding</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row row--25 mt--50 mt_md--40 mt_sm--40">
+                    <div class="col-lg-4">
+                        <div class="d-flex flex-wrap align-content-start h-100">
+                            <div class="position-sticky clients-wrapper sticky-top rbt-sticky-top-adjust">
+                                <ul class="nav tab-navigation-button flex-column nav-pills me-3" id="v-pills-tab" role="tablist">
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="v-pills-home-tab" data-toggle="tab" href="#v-pills-Javascript" role="tab" aria-selected="true">C++</a>
+                                    </li>
+
+
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="v-pills-profile-tab" data-toggle="tab" href="#v-pills-Design" role="tab" aria-selected="true">HTML - CSS</a>
+                                    </li>
+
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="v-pills-wordpress-tab" data-toggle="tab" href="#v-pills-Wordpress" role="tab" aria-selected="true">JavaScript</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="v-pills-settings-tabs" data-toggle="tab" href="#v-pills-settings" role="tab" aria-selected="true">PYTHON</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="v-pills-laravel-tabs" data-toggle="tab" href="#v-pills-laravel" role="tab" aria-selected="true">SQL
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="v-pills-python-tabs" data-toggle="tab" href="#v-pills-python" role="tab" aria-selected="true">PHP</a>
+                                    </li>
+
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- c++ sECTIOn * 12 ..................  -->
+
+
+                    <div class="col-lg-8">
+                        <div class="tab-area">
+                            <div class="d-flex align-items-start">
+                                <div class="tab-content" id="v-pills-tabContent">
+
+                                    <div class="tab-pane fade" id="v-pills-Javascript" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                        <div class="client-card">
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="https://www.w3schools.com/cpp/cpp_intro.asp" target="_blank"><img src="assets/coding/C++/C++.png" alt="Introduction"></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="https://www.w3schools.com/cpp/cpp_intro.asp" target="_blank">Intro</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="https://www.w3schools.com/cpp/cpp_comments.asp" target="_blank"><img src="assets/coding/C++/Comment.png" alt="Comments"></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="https://www.w3schools.com/cpp/cpp_comments.asp" target="_blank">Comments</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="https://www.w3schools.com/cpp/cpp_data_types.asp" target="_blank"><img src="assets/coding/C++/int.png"alt="Data-Type"></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="https://www.w3schools.com/cpp/cpp_data_types.asp" target="_blank">Data type</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="https://www.w3schools.com/cpp/cpp_operators.asp" target="_blank"><img src="assets/coding/C++/operator.png" alt="Operator"></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="https://www.w3schools.com/cpp/cpp_operators.asp" target="_blank">Operators</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="https://www.w3schools.com/cpp/cpp_conditions.asp" target="_blank"><img src="assets/coding/C++/condition.png" alt="Condition"></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="https://www.w3schools.com/cpp/cpp_conditions.asp" target="_blank">Condition</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="https://www.w3schools.com/cpp/cpp_switch.asp" target="_blank"><img src="assets/coding/C++/switch.png" alt="Switch"></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="https://www.w3schools.com/cpp/cpp_switch.asp" target="_blank">Switch</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="https://www.w3schools.com/cpp/cpp_for_loop.asp" target="_blank"><img src="assets/coding/C++/loop.png" alt="Loop"></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="https://www.w3schools.com/cpp/cpp_for_loop.asp" target="_blank">Loop</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="https://www.w3schools.com/cpp/cpp_arrays.asp" target="_blank"><img src="assets/coding/C++/array.png" alt="Arrays"></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="https://www.w3schools.com/cpp/cpp_arrays.asp" target="_blank">Arrays</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="https://www.w3schools.com/cpp/cpp_functions.asp" target="_blank"><img src="assets/coding/C++/function.png" alt="Functions"></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="https://www.w3schools.com/cpp/cpp_functions.asp" target="_blank">Functions</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="https://www.w3schools.com/cpp/cpp_oop.asp" target="_blank"><img src="assets/coding/C++/oop.png" alt="OOPs"></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="https://www.w3schools.com/cpp/cpp_oop.asp" target="_blank">OOPs</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="https://www.w3schools.com/cpp/cpp_classes.asp" target="_blank"><img src="assets/coding/C++/class.png" alt="Classes"></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="https://www.w3schools.com/cpp/cpp_classes.asp" target="_blank">Classes</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="https://www.w3schools.com/cpp/cpp_examples.asp" target="_blank"><img src="assets/coding/C++/example.png" alt="Example"></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="https://www.w3schools.com/cpp/cpp_examples.asp" target="_blank">Example</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                        </div>
+                                    </div>
+
+
+
+
+
+
+
+<!-- DARK.............................  -->
+
+
+
+
+
+
+
+
+
+
+                                    <div class="tab-pane fade show active" id="v-pills-Design" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                                        <div class="client-card">
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="https://www.w3schools.com/html/html_intro.asp" target="_blank"><img src="assets/coding/HTML/intro.png" alt="intro"></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="https://www.w3schools.com/html/html_intro.asp" target="_blank">Intro</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="https://www.w3schools.com/html/html_comments.asp" target="_blank" ><img src="assets/coding/HTML/comment.png" alt="Comments"></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="https://www.w3schools.com/html/html_comments.asp" target="_blank" >Comments</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="https://www.w3schools.com/html/html_elements.asp" target="_blank" ><img src="assets/coding/HTML/element.png" alt="Elements"></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="https://www.w3schools.com/html/html_elements.asp" target="_blank" >Elements</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="https://www.w3schools.com/html/html_headings.asp" target="_blank" ><img src="assets/coding/HTML/tag.png" alt="Tags"></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="https://www.w3schools.com/html/html_headings.asp" target="_blank" >Tags</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="https://www.w3schools.com/html/html_css.asp" target="_blank" ><img src="assets/coding/HTML/css.png" alt="CSS"></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="https://www.w3schools.com/html/html_css.asp" target="_blank" >CSS</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="https://www.w3schools.com/html/html_links.asp" target="_blank" ><img src="assets/coding/HTML/link.png" alt="Link"></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="https://www.w3schools.com/html/html_links.asp" target="_blank" >Link</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="https://www.w3schools.com/html/html_lists.asp" target="_blank" ><img src="assets/coding/HTML/list.png" alt="List"></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="https://www.w3schools.com/html/html_lists.asp" target="_blank" >List</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="https://www.w3schools.com/html/html_emojis.asp" target="_blank" ><img src="assets/coding/HTML/emoji.png" alt="Emojis"></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="https://www.w3schools.com/html/html_emojis.asp" target="_blank" >Emojis</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="https://www.w3schools.com/html/html_forms.asp" target="_blank" ><img src="assets/coding/HTML/form.png" alt="Forms"></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="https://www.w3schools.com/html/html_forms.asp" target="_blank" >Forms</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="https://www.w3schools.com/html/html5_canvas.asp" target="_blank" ><img src="assets/coding/HTML/graphic.png" alt="Graphics"></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="https://www.w3schools.com/html/html5_canvas.asp" target="_blank" >Graphics</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="https://www.w3schools.com/html/html_media.asp" target="_blank" ><img src="assets/coding/HTML/media.png" alt="Multimedia"></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="https://www.w3schools.com/html/html_media.asp" target="_blank" >Multimedia</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="https://www.w3schools.com/html/html_examples.asp" target="_blank" ><img src="assets/coding/HTML/example.png" alt="Examples"></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="https://www.w3schools.com/html/html_examples.asp" target="_blank" >Example</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                        </div>
+                                    </div>
+
+
+
+
+
+
+
+
+
+                                    <div class="tab-pane fade" id="v-pills-Wordpress" role="tabpanel" aria-labelledby="v-pills-wordpress-tab">
+                                        <div class="client-card">
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="https://www.w3schools.com/js/js_intro.asp" target="_blank" ><img src="assets/coding/JS/introjs.png" alt="Intro"></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="https://www.w3schools.com/js/js_intro.asp" target="_blank" >Intro</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="https://www.w3schools.com/js/js_syntax.asp" target="_blank" ><img src="assets/coding/JS/syntaxjs.png" alt="Syntax"></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="https://www.w3schools.com/js/js_syntax.asp" target="_blank" >Syntax</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="https://www.w3schools.com/js/js_comments.asp" target="_blank" ><img src="assets/coding/JS/commentjs.png" alt="Comments"></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="https://www.w3schools.com/js/js_comments.asp" target="_blank" >Comments</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="https://www.w3schools.com/js/js_operators.asp" target="_blank" ><img src="assets/coding/JS/operatorjs.png" alt="Operators"></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="https://www.w3schools.com/js/js_operators.asp" target="_blank" >Operator</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="https://www.w3schools.com/js/js_datatypes.asp" target="_blank" ><img src="assets/coding/JS/data typejs.png" alt="Data-type"></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="https://www.w3schools.com/js/js_datatypes.asp" target="_blank" >Data type</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="https://www.w3schools.com/js/js_functions.asp" target="_blank" ><img src="assets/coding/JS/functionjs.png" alt="Functions"></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="https://www.w3schools.com/js/js_functions.asp" target="_blank" >Function</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="https://www.w3schools.com/js/js_events.asp" target="_blank" ><img src="assets/coding/JS/eventsjd.png" alt="Events"></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="https://www.w3schools.com/js/js_events.asp" target="_blank" >Events</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="https://www.w3schools.com/js/js_strings.asp" target="_blank" ><img src="assets/coding/JS/strigjs.png" alt="Strings"></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="https://www.w3schools.com/js/js_strings.asp" target="_blank" >Strings</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="https://www.w3schools.com/js/js_numbers.asp" target="_blank" ><img src="assets/coding/JS/numberjs.png" alt="Numbers"></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="https://www.w3schools.com/js/js_numbers.asp" target="_blank" >Numbers</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="https://www.w3schools.com/js/js_arrays.asp" target="_blank" ><img src="assets/coding/JS/array.png" alt="Arrays"></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="https://www.w3schools.com/js/js_arrays.asp" target="_blank" >Array</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="https://www.w3schools.com/js/js_dates.asp" target="_blank" ><img src="assets/coding/JS/datesjs.png" alt="Dates"></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="https://www.w3schools.com/js/js_dates.asp" target="_blank" >Dates</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="https://www.w3schools.com/js/js_math.asp" target="_blank" ><img src="assets/coding/JS/morejs.png" alt="more.."></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="https://www.w3schools.com/js/js_math.asp" target="_blank" >More..</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                        </div>
+                                    </div>
+
+
+
+
+                                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tabs">
+                                        <div class="client-card">
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="https://www.w3schools.com/python/python_intro.asp" target="_blank"><img src="assets/coding/Py/intro1.png" alt="Intro"></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="https://www.w3schools.com/python/python_intro.asp" target="_blank">Intro</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="https://www.w3schools.com/python/python_comments.asp" target="_blank"><img src="assets/coding/Py/comment.png" alt="Comments"></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="https://www.w3schools.com/python/python_comments.asp" target="_blank">Comments</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="https://www.w3schools.com/python/python_datatypes.asp" target="_blank"><img src="assets/coding/Py/data.png" alt="Data-type"></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="https://www.w3schools.com/python/python_datatypes.asp" target="_blank">Data type</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="https://www.w3schools.com/python/python_booleans.asp" target="_blank"><img src="assets/coding/Py/boolean.png" alt="Booleans"></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="https://www.w3schools.com/python/python_booleans.asp" target="_blank">Booleans</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="https://www.w3schools.com/python/python_lists.asp" target="_blank"><img src="assets/coding/Py/list.png" alt="List/Tuple/Set"></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="https://www.w3schools.com/python/python_lists.asp" target="_blank">List/Tuple/Set</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="https://www.w3schools.com/python/python_conditions.asp" target="_blank"><img src="assets/coding/Py/condition.png" alt="Condition"></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="https://www.w3schools.com/python/python_conditions.asp" target="_blank">Condition</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="https://www.w3schools.com/python/python_for_loops.asp" target="_blank"><img src="assets/coding/Py/loop.png" alt="Loop"></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="https://www.w3schools.com/python/python_for_loops.asp" target="_blank">Loop</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="https://www.w3schools.com/python/python_functions.asp" target="_blank"><img src="assets/coding/Py/function.png" alt="Functions"></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="https://www.w3schools.com/python/python_functions.asp" target="_blank">Function</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="https://www.w3schools.com/python/numpy/default.asp" target="_blank"><img src="assets/coding/Py/numpy.png" alt="Numpy"></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="https://www.w3schools.com/python/numpy/default.asp" target="_blank">Numpy</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="#" target="_blank"><img src="assets/coding/Py/pandas.png" alt="Pandas"></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="#" target="_blank">Pandas</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="#" target="_blank"><img src="assets/coding/Py/Django.png" alt="Django"></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="#" target="_blank">Django</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="#" target="_blank"><img src="assets/coding/Py/example.png" alt="Example"></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="#" target="_blank">Example</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                        </div>
+                                    </div>
+
+
+
+
+                                    <div class="tab-pane fade" id="v-pills-laravel" role="tabpanel" aria-labelledby="v-pills-laravel-tabs">
+                                        <div class="client-card">
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="https://www.w3schools.com/sql/sql_intro.asp" target="_blank"><img src="assets/coding/SQl/intro.png" alt="Intro"></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="https://www.w3schools.com/sql/sql_intro.asp" target="_blank">Intro</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="https://www.w3schools.com/sql/sql_and_or.asp"><img src="assets/coding/SQl/gate.png" alt="And, Or, Not"></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="https://www.w3schools.com/sql/sql_and_or.asp">And, Or, Not</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="https://www.w3schools.com/sql/sql_join.asp"><img src="assets/coding/SQl/Joins.png" alt="Joins"></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="https://www.w3schools.com/sql/sql_join.asp">Joins</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="https://www.w3schools.com/sql/sql_union.asp"><img src="assets/coding/SQl/Union.png" alt="Union"></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="https://www.w3schools.com/sql/sql_union.asp">Union</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="https://www.w3schools.com/sql/sql_case.asp"><img src="assets/coding/SQl/case.png" alt="Case"></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="https://www.w3schools.com/sql/sql_case.asp">Case</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="https://www.w3schools.com/sql/sql_comments.asp"><img src="assets/coding/SQl/comment.png" alt="Comments"></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="https://www.w3schools.com/sql/sql_comments.asp">Comments</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="https://www.w3schools.com/sql/sql_create_db.asp"><img src="assets/coding/SQl/Database.png" alt="Data-Base"></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="https://www.w3schools.com/sql/sql_create_db.asp">Data Base</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="https://www.w3schools.com/sql/sql_backup_db.asp"><img src="assets/coding/SQl/backup.png" alt="Backup-DB"></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="https://www.w3schools.com/sql/sql_backup_db.asp">Backup DB</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="https://www.w3schools.com/sql/sql_primarykey.asp"><img src="assets/coding/SQl/keys.png" alt="Key"></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="https://www.w3schools.com/sql/sql_primarykey.asp">Key</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="https://www.w3schools.com/sql/sql_injection.asp"><img src="assets/coding/SQl/injection.png" alt="Injection"></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="https://www.w3schools.com/sql/sql_injection.asp">Injection</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="https://www.w3schools.com/sql/sql_hosting.asp"><img src="assets/coding/SQl/hosting.png" alt="Hosting"></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="https://www.w3schools.com/sql/sql_hosting.asp">Hosting</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="https://www.w3schools.com/sql/sql_examples.asp"><img src="assets/coding/SQl/examplr.png" alt="Examples"></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="https://www.w3schools.com/sql/sql_examples.asp">Examples</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                        </div>
+                                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    <div class="tab-pane fade" id="v-pills-python" role="tabpanel" aria-labelledby="v-pills-python-tabs">
+                                        <div class="client-card">
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="https://www.w3schools.com/php/php_intro.asp"><img src="assets/coding/PHP/intro.png" alt="Intro"></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="https://www.w3schools.com/php/php_intro.asp">Intro</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="https://www.w3schools.com/php/php_comments.asp"><img src="assets/coding/PHP/Comment.png" alt="Comments"></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="https://www.w3schools.com/php/php_comments.asp">Comments</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="https://www.w3schools.com/php/php_echo_print.asp"><img src="assets/coding/PHP/echo.png" alt="Echo"></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="https://www.w3schools.com/php/php_echo_print.asp">Echo</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="https://www.w3schools.com/php/php_if_else.asp"><img src="assets/coding/PHP/ifelse.png" alt="If...Else...Elseif"></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="https://www.w3schools.com/php/php_if_else.asp">If...Else...Elseif</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="https://www.w3schools.com/php/php_switch.asp"><img src="assets/coding/PHP/switch.png" alt="Switch"></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="https://www.w3schools.com/php/php_switch.asp">Switch</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="https://www.w3schools.com/php/php_looping.asp"><img src="assets/coding/PHP/loop.png" alt="Loop"></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="https://www.w3schools.com/php/php_looping.asp">Loop</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="https://www.w3schools.com/php/php_functions.asp"><img src="assets/coding/PHP/function.png" alt="Function"></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="https://www.w3schools.com/php/php_functions.asp">Functions</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="https://www.w3schools.com/php/php_arrays.asp"><img src="assets/coding/PHP/array.png" alt="Array"></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="https://www.w3schools.com/php/php_arrays.asp">Array</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="https://www.w3schools.com/php/php_forms.asp"><img src="assets/coding/PHP/form.png" alt="PHP-Form"></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="https://www.w3schools.com/php/php_forms.asp">PHP Form</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="https://www.w3schools.com/php/php_date.asp"><img src="assets/coding/PHP/datetime.png" alt="Date-Time"></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="https://www.w3schools.com/php/php_date.asp">Date and Time</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="https://www.w3schools.com/php/php_json.asp"><img src="assets/coding/PHP/JSON.png" alt="JSON"></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="https://www.w3schools.com/php/php_json.asp">JSON</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                            <!-- Start Single Brand  -->
+                                            <div class="main-content">
+                                                <div class="inner text-center">
+                                                    <div class="thumbnail">
+                                                        <a href="https://www.w3schools.com/php/php_oop_what_is.asp"><img src="assets/coding/PHP/More.png" alt="More"></a>
+                                                    </div>
+                                                    <div class="seperator"></div>
+                                                    <div class="client-name"><span><a href="https://www.w3schools.com/php/php_oop_what_is.asp">More...</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Brand  -->
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End client section -->
+
+
+
+   
+        <!-- Start News Area -->
+        <div class="rn-blog-area rn-section-gap section-separator" id="blog">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="500" data-aos-once="true" class="section-title text-center">
+                            <span class="subtitle">Visit my Codepen Id and keep your feedback</span>
+                            <h2 class="title">My Codepen</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row--25 mt--30 mt_md--10 mt_sm--10">
+
+                    <!-- Start Single blog -->
+                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="400" data-aos-once="true" class="col-lg-6 col-xl-4 mt--30 col-md-6 col-sm-12 col-12 mt--30">
+                        <div class="rn-blog" data-toggle="modal" data-target="#exampleModalCenters">
+                            <div class="inner">
+                                <div class="thumbnail">
+                                    <a href="FeaturesSection/circle/circ-pack-tap/dist/index.html" target="_blank">
+                                        <img src="assets/images/Dribbble/one.gif" alt="Personal Portfolio Images">
+                                    </a>
+                                </div>
+                                <div class="content">
+                                    <div class="category-info">
+                                        <div class="category-list">
+                                            <a href="FeaturesSection/circle/circ-pack-tap/dist/index.html" target="_blank">Zero</a>
+                                        </div>
+                                        <div class="meta">
+                                            <span><i class="feather-clock"></i> 2 min ago</span>
+                                        </div>
+                                    </div>
+                                    <h4 class="title"><a href="FeaturesSection/circle/circ-pack-tap/dist/index.html" target="_blank">Zero Circle | Tap To Bounce Circle
+                                            <i class="feather-arrow-up-right"></i></a></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single blog -->
+
+                    <!-- Start Single blog -->
+                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="600" data-aos-once="true" class="col-lg-6 col-xl-4 mt--30 col-md-6 col-sm-12 col-12 mt--30">
+                        <div class="rn-blog" data-toggle="modal" data-target="#exampleModalCenters">
+                            <div class="inner">
+                                <div class="thumbnail">
+                                    <a href="javascript:void(0)">
+                                        <img src="assets/images/Dribbble/01.jpg" alt="Personal Portfolio Images">
+                                    </a>
+                                </div>
+                                <div class="content">
+                                    <div class="category-info">
+                                        <div class="category-list">
+                                            <a href="javascript:void(0)">Development</a>
+                                        </div>
+                                        <div class="meta">
+                                            <span><i class="feather-clock"></i> 2 hour read</span>
+                                        </div>
+                                    </div>
+                                    <h4 class="title"><a href="javascript:void(0)">The services provide for design <i
+                                        class="feather-arrow-up-right"></i></a></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single blog -->
+
+                    <!-- Start Single blog -->
+                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="800" data-aos-once="true" class="col-lg-6 col-xl-4 mt--30 col-md-6 col-sm-12 col-12 mt--30">
+                        <div class="rn-blog" data-toggle="modal" data-target="#exampleModalCenters">
+                            <div class="inner">
+                                <div class="thumbnail">
+                                    <a href="javascript:void(0)">
+                                        <img src="assets/images/Dribbble/05.jpg" alt="Personal Portfolio Images">
+                                    </a>
+                                </div>
+                                <div class="content">
+                                    <div class="category-info">
+                                        <div class="category-list">
+                                            <a href="javascript:void(0)">Application</a>
+                                        </div>
+                                        <div class="meta">
+                                            <span><i class="feather-clock"></i> 5 min read</span>
+                                        </div>
+                                    </div>
+                                    <h4 class="title"><a href="javascript:void(0)">Mobile app landing design & app
+                                            maintain<i class="feather-arrow-up-right"></i></a></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single blog -->
+
+                </div>
+            </div>
+        </div>
+        <!-- ENd Mews Area -->
+        <!-- Start Contact section -->
+        <div class="rn-contact-area rn-section-gap section-separator" id="contacts">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title text-center">
+                            <span class="subtitle">Contact</span>
+                            <h2 class="title">Contact With Me</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt--50 mt_md--40 mt_sm--40 mt-contact-sm">
+                    <div class="col-lg-5">
+                        <div class="contact-about-area">
+                            <div class="thumbnail">
+                                <img src="assets/images/3d/Saly-31.png" alt="contact-img">
+                            </div>
+                            <div class="title-area">
+                                <h4 class="title">Anshu Chaurasia</h4>
+                                <span>Chief Operating Officer</span>
+                            </div>
+                            <div class="description">
+                                <p>I am available for freelance work. Connect with me via and call in to my account.
+                                </p>
+                                <span class="phone">Phone: <a href="tel:6392457271">+91 6392457271</a></span>
+                                <span class="mail">Email: <a href="mailto:anshuchaurasia210@gmail.com">anshuchaurasia210@gmail.com</a></span>
+                            </div>
+                            <div class="social-area">
+                                <div class="name">FIND WITH ME</div>
+                                <div class="social-icone">
+                                    <a href="https://www.facebook.com/profile.php?id=100015280038079" target="_blank"><i data-feather="facebook"></i></a>
+                                    <a href="https://www.linkedin.com/in/anshu-chaurasia-089576255/" target="_blank"><i data-feather="linkedin"></i></a>
+                                    <a href="https://www.instagram.com/_p_a_n_d_e_m_i_c_/" target="_blank"><i data-feather="instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-aos-delay="600" class="col-lg-7 contact-input">
+                        <div class="contact-form-wrapper">
+                            <div class="introduce">
+<!-- 
+                                <form class="rnt-contact-form rwt-dynamic-form row" id="contact-form" method="POST" action="" data-email="">
+
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label for="contact-name">Your Name</label>
+                                            <input class="form-control form-control-lg" name="contact-name" id="contact-name" type="text" placeholder="Type your name.." required>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label for="contact-phone">Phone Number</label>
+                                            <input class="form-control" name="contact-phone" id="contact-phone" type="text" placeholder="Type your phone number.." required>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-12">
+                                        <div class="form-group">
+                                            <label for="contact-email">Email</label>
+                                            <input class="form-control form-control-sm" id="contact-email" name="contact-email" type="email" placeholder="Type your email address.." required>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-12">
+                                        <div class="form-group">
+                                            <label for="subject">subject</label>
+                                            <input class="form-control form-control-sm" id="subject" name="subject" type="text" placeholder="Type your subject.." required>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-12">
+                                        <div class="form-group">
+                                            <label for="contact-message">Your Message</label>
+                                            <textarea name="contact-message" id="contact-message" cols="30" rows="10" placeholder="Type your feedback here.." required></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-12">
+                                        <a href="mailto: anshuchaurasia210@gmail.com">
+                                        <button name="submit" type="submit" id="submit" class="rn-btn" href="mailto : anshuchaurasia210@gmail.com">
+                                            <span>SEND MESSAGE</span>
+                                            <i data-feather="arrow-right"></i>
+                                        </button></a>
+                                    </div>
+                                </form> -->
+
+
+                                        <form class="gform pure-form pure-form-stacked" method="POST"
+        action="https://script.google.com/macros/s/AKfycbyjw5-vtUEB-61rliY2Jn5DRb23_gm-v7LqG8aszWiiND8M9rw3WzZxTK4rUREHLOe2Ng/exec">
+    <div class="form-elements">
+      <div style="background:none;width: 630px;padding-left: 20px;padding-right: 20px;">
+        <b class="content-head" style="font-size: 2.3em;">Contact Us!</b>
+        <br><br>
+
+        
+        <label for="contact-email">Email</label>
+        <input type="email" name="email" required="" class="form-control form-control-lg"  id="contact-name" placeholder="Type your e-mail.."/><br>
+
+         <label for="contact-phone">Phone</label>
+         <input type="number"  name="phone" required="" class="form-control"  id="contact-phone" placeholder="Type your phone number..."/><br>
+      
+        <label for="contact-feedback">How can we help you?</label>
+        <textarea  name="message" rows="5" cols="22" required="" id="contact-message" placeholder="Type your queries here.."></textarea><br><br>
+    
+        <button  class="rn-btn" id="button" onclick="alert('Do you want to send..?')" >
+            <span>SEND MESSAGE</span>
+        <i data-feather="arrow-right"></i>
+    </button><br>
+      </div>
+    </div>
+
+    <!-- Thankyou_message --><br>
+    <div class="thankyou_message" style="display:none;background:none;border:0 solid gray;border-radius: 0;width: 400px;padding-top: 15px;padding-bottom: 40px;padding-left: 20px;padding-right: 20px;"><br><br>
+      <h1>Thanks for contact us!</h1>
+      <h1>* * * * * * *</h1>
+    </div>
+  </form>
+  <script data-cfasync="false" type="text/javascript">
+    
+   (function() {
+  function validEmail(email) {
+    var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+    return re.test(email);
+  }
+
+  function validateHuman(honeypot) {
+    if (honeypot) {
+      console.log("Robot Detected!");
+      return true;
+    } else {
+      console.log("Welcome Human!");
+    }
+  }
+  function getFormData(form) {
+    var elements = form.elements;
+
+    var fields = Object.keys(elements).filter(function(k) {
+          return (elements[k].name !== "honeypot");
+    }).map(function(k) {
+      if(elements[k].name !== undefined) {
+        return elements[k].name;
+      }else if(elements[k].length > 0){
+        return elements[k].item(0).name;
+      }
+    }).filter(function(item, pos, self) {
+      return self.indexOf(item) == pos && item;
+    });
+
+    var formData = {};
+    fields.forEach(function(name){
+      var element = elements[name];
+      formData[name] = element.value;
+      if (element.length) {
+        var data = [];
+        for (var i = 0; i < element.length; i++) {
+          var item = element.item(i);
+          if (item.checked || item.selected) {
+            data.push(item.value);
+          }
+        }
+        formData[name] = data.join(', ');
+      }
+    });
+
+    // add form-specific values into the data
+    formData.formDataNameOrder = JSON.stringify(fields);
+    formData.formGoogleSheetName = form.dataset.sheet || "BSSContact"; // default sheet name
+    formData.formGoogleSendEmail = form.dataset.email || ""; // no email by default
+
+    console.log(formData);
+    return formData;
+  }
+
+  function handleFormSubmit(event) {  
+    event.preventDefault();           
+    var form = event.target;
+    var data = getFormData(form);         
+    if( data.email && !validEmail(data.email) ) {   
+      var invalidEmail = form.querySelector(".email-invalid");
+      if (invalidEmail) {
+        invalidEmail.style.display = "block";
+        return false;
+      }
+    } else {
+      disableAllButtons(form);
+      var url = form.action;
+      var xhr = new XMLHttpRequest();
+      xhr.open('POST', url);
+      xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+      xhr.onreadystatechange = function() {
+          console.log(xhr.status, xhr.statusText);
+          console.log(xhr.responseText);
+          var formElements = form.querySelector(".form-elements")
+          if (formElements) {
+            formElements.style.display = "none"; // hide form
+          }
+          var thankYouMessage = form.querySelector(".thankyou_message");
+          if (thankYouMessage) {
+            thankYouMessage.style.display = "block";
+          }
+          return;
+      };
+      var encoded = Object.keys(data).map(function(k) {
+          return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
+      }).join('&');
+      xhr.send(encoded);
+    }
+  }
+  
+  function loaded() {
+    console.log("Contact form submission handler loaded successfully.");
+    var forms = document.querySelectorAll("form.gform");
+    for (var i = 0; i < forms.length; i++) {
+      forms[i].addEventListener("submit", handleFormSubmit, false);
+    }
+  };
+  document.addEventListener("DOMContentLoaded", loaded, false);
+
+  function disableAllButtons(form) {
+    var buttons = form.querySelectorAll("button");
+    for (var i = 0; i < buttons.length; i++) {
+      buttons[i].disabled = true;
+    }
+  }
+})();
+
+
+  </script>
+
+
+
+
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Contuct section -->
+
+      
+        <!-- Back to  top Start -->
+        <div class="backto-top">
+            <div>
+                <i data-feather="arrow-up"></i>
+            </div>
+        </div>
+        <!-- Back to top end -->
+
+       
+
+
+
+    </main>
+
+    <!-- Start Footer Area -->
+    <div class="rn-footer-area rn-section-gap section-separator">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer-area text-center">
+
+                        <div class="logo">
+                            <a href="#">
+                                <img src="assets/images/Anshu Botttom.png" alt="logo" >
+                            </a>
+                        </div>
+
+                        <p class="description mt--30">© <a target="_blank" href="https://youtube.com/c/codevillage">Code Village.</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Footer Area -->
+
+    <!-- JS ============================================ -->
+    <script src="assets/js/vendor/jquery.js"></script>
+    <script src="assets/js/vendor/modernizer.min.js"></script>
+    <script src="assets/js/vendor/feather.min.js"></script>
+    <script src="assets/js/vendor/slick.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.js"></script>
+    <script src="assets/js/vendor/text-type.js"></script>
+    <script src="assets/js/vendor/wow.js"></script>
+    <script src="assets/js/vendor/aos.js"></script>
+    <script src="assets/js/vendor/particles.js"></script>
+    <!-- main JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

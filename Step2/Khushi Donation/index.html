@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" 
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>KHUSHI DONATION</title>
+</head>
+
+<style>
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+/*****************************  nevigation bar ****************************/
+.nevbar{
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    z-index: 5;
+    display: flex;
+    background-color: transparent;
+}
+.logo a{
+    text-decoration: none;
+    color: white;
+    transition: .3s;
+}
+.logo a h1{
+    margin: 15px 100px;
+}
+.logo a h1 span{
+    color: rgb(1, 161, 1);
+}
+.menu{
+    flex: 1;
+    text-align: right;
+    margin-top: 28px;
+    margin-right: 100px;
+}
+.menu ul li{
+    list-style: none;
+    display: inline-block;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+    margin-left: 30px;
+    font-size: 15px;
+    transition: 0.5s;
+    font-weight: 500;
+    position: relative;
+}
+.menu ul li a:hover{
+    color: rgb(1, 161, 1);
+}
+.menu ul li a span{
+    color: #c3073f;
+}
+.menuicon{
+    margin: auto;
+    color: rgba(255, 255, 255, 0.5);
+    display: none;
+}
+.menuicon i span {
+    font-weight: 600;
+}
+
+/* navbar mobile view */
+@media only screen and (max-width : 700px){
+    .nevbar{
+        background-color: black;
+    }
+    .logo a h1{
+        margin: 15px 12px;
+    }
+    .menu{
+        text-align: right;
+        margin-right: 0px;
+        position:absolute;
+        background-color: black;
+        width: 100%;
+        top: 49px;
+        max-height: 0px;
+        overflow: hidden;
+        box-shadow: 0px 10px 12px -1px rgb(0 0 0 / 10%);
+        transition: .5s;
+    }
+    .menu ul li{
+        list-style: none;
+        display: block;
+        margin: 25px 40px 35px auto;
+    }
+    .menu ul li a{
+        text-decoration: none;
+        color: white;
+        margin-left: 0px;
+        font-size: 15px;
+        transition: 0.5s;
+        font-size: 18px;
+    }
+    .menuicon{
+        display: block;
+        margin-right: 30px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+}
+
+/**************  background cover image  ***************/
+.cover {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.6)) , url('https://source.unsplash.com/1600x900/?donate,charity,child,study');
+    z-index: -200; 
+    color: white;
+}
+.cover .information {
+    align-items: center;
+    max-width: 1000px ;    
+    margin: 0 auto;
+    padding-top: 10%;
+}
+.information h3 {
+    font-size: 18px;
+    letter-spacing: 3px;
+    font-weight: 300;
+}
+.information h3 span {
+    float: right;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+}
+.information h2 {
+    font-size: 40px;
+}
+.information h1 span{
+    font-size: 110px;
+    line-height: 120px;
+    color: rgb(1, 161, 1);
+    letter-spacing: 10px;
+}
+.information a {
+    display: block;
+    max-width: 350px;
+    margin: 0 auto;
+}
+.information a button{
+    padding: 8px 80px;
+    cursor: pointer;
+    letter-spacing: 5px;
+    background: linear-gradient(to right, transparent 50%, rgb(1, 161, 1) 50%);
+    background-size: 200%;
+    background-position: left;
+    transition: .3s;
+    border: 2px solid white;
+    color: white;
+    margin: 40px 0 -50%;
+    width: 100%;
+}
+.information a button:hover {
+    background-position: right;
+    color: white;
+}
+
+@media only screen and (max-width : 700px ){
+
+    .cover .information {
+        align-items: center;
+        max-width: 1000px ;    
+        margin: 0 auto;
+        padding-top: 30%;
+    }
+    .information h3 {
+        font-size: 14px;
+        letter-spacing: 3px;
+        font-weight: 300;
+    }
+    .information h3 span {
+        float: none;
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.8);
+    }
+    .information h2 {
+        font-size: 30px;
+    }
+    .information h1 span{
+        font-size: 70px;
+        line-height: 120px;
+        color: rgb(1, 161, 1);
+        letter-spacing: 10px;
+    }
+
+}
+
+/* *******************************   About us  **************************************** */
+.about{
+    width: 100%;
+    display: flex;
+    background-color:#F8F9FA;
+    padding-top: 80px;
+}
+/* About image */
+.about .imgcontanner{
+    width: 50%;
+    position: relative;
+
+}
+.about .imgcontanner .aboutimg {
+    position: absolute;
+    background: url('sec.jpg');
+    border-radius: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 350px;
+    top: 80px;
+    left: 32%;
+}
+
+/* about content */
+.about .aboutcontent {
+    width: 50%;
+    padding: 80px 10% 80px 16%;
+    color: white;
+    background-color: rgb(1, 99, 1);
+}
+.aboutcontent h5 {
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.aboutcontent h1 {
+    font-weight: 600;
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+.aboutcontent p {
+    padding-bottom: 30px;
+    line-height: 25px;
+}
+
+/* donate button  */
+.aboutcontent a {
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+    padding: 8px 40px;
+    background: linear-gradient(to right, transparent 50%, rgb(1, 161, 1) 50%);
+    background-size: 200%;
+    background-position: left;
+    transition: .3s;
+    border: 2px solid white;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+.aboutcontent a:hover {
+    background-position: right;
+}
+@media only screen and (max-width : 700px ) {
+
+    /* *******************************   About us  **************************************** */
+    .about{
+        width: 100%;
+        display: block;
+        background-color:#F8F9FA;
+        padding-top: 0px;
+
+    }
+    /* About image */
+    .about .imgcontanner{
+        width: 100%;
+        padding:3%;
+        padding-bottom: 50px;
+        box-sizing: border-box;
+
+    }
+    .about .imgcontanner .aboutimg {
+        position:relative;
+        width: 100%;
+        height: 450px;
+        top: 0px;
+        left: 0%;
+        display: none;
+    }
+
+    /* about content */
+    .about .aboutcontent {
+        width: 100%;
+        padding: 65px 4%;
+        box-sizing: border-box;
+    }
+    .aboutcontent h5 {
+        margin-bottom: 10px;
+    }
+    .aboutcontent h1 {
+        font-size: 30px;
+    }
+}
+
+/* ************************************  Service  ************************** */
+.service{
+    width: 100%;
+    padding: 100px 0;
+    background-color: #F8F9FA;
+    text-align: center;
+    box-sizing: border-box;
+}
+.service h5{
+    color: rgb(1, 99, 1);
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+.service h1 {
+    font-size: 40px;
+    font-weight: 600;
+    padding-top: 10px;
+}
+
+/* details service */
+.service .details {
+    width: 75%;
+    display: flex;
+    margin: 0 auto;
+    padding-top: 60px;
+}
+.details .info {
+    padding: 0 15px;
+}
+.details .info .logo {
+    padding: 34px;
+    width:45px;
+    margin: 0 auto;
+    background-color: rgb(1, 161, 1);
+    border-radius: 500px;
+    color: white;
+    font-size: 30px;
+}
+.details .info #head {
+    padding: 20px 0 10px;
+    color: black;
+    font-weight: 500;
+}
+
+@media only screen and (max-width : 700px ) {
+
+    /* ************************************  Service  ************************** */
+    .service{
+        padding: 70px 0;
+    }
+    .service h1 {
+        font-size: 30px;
+    }
+    /* details service */
+    .service .details {
+        width: 100%;
+        display: block;
+        padding-top: 25px;   
+    }
+    .details .info {
+        padding: 0 15px 25px;
+    }
+    .details .info .logo {
+        padding: 34px;
+        width:45px;
+    }
+}
+
+
+/* ***************************************  Counter ************************** */
+.contercontent {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    background-color:aliceblue;
+}
+.counterbox {
+    width: 100%;
+    height: 250px;
+}
+.contercontent .one {
+    background-color: rgb(1, 99, 1);
+}
+.counterbox .information {
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+}
+.information .number p {
+    font-size: 50px;
+    color: rgb(1, 161, 1);
+    padding-right: 10px;
+}
+.information .text p{
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+@media only screen and (max-width : 700px ) {
+
+    /* ******************************   Counter  *********************** */
+    .contercontent {
+        display: block;
+    }
+    .counterbox {
+        height: 150px;
+    }
+
+}
+
+
+button .send{
+                            list-style: none;
+                            display: inline-block;
+                        }
+                        button .send a{
+                            text-decoration: none;
+                            color: white;
+                            margin-left: 30px;
+                            font-size: 15px;
+                            transition: 0.5s;
+                            font-weight: 500;
+                            position: relative;
+                        }
+
+/************************************** Contact **********************************************/
+.contact {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: transparent;
+    padding: 125px 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.6)) , url('https://source.unsplash.com/1600x900/?contact,message');
+}
+.contact h1 {
+    color: white;
+    text-align: center;
+}
+.contactcontanner {
+    width: 70%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+.contactcontanner .contanner {
+    width: 30%;
+}
+.contactcontanner .contanner .heading {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: 2px solid white;
+    margin-bottom: 8px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,.07);
+}
+.heading .icon {
+    padding: 0 0 0 20px;
+    font-size: 20px;
+    color: rgb(3, 180, 3);
+}
+.heading .info {
+    width: 70%;
+    margin: 25px auto;
+    color: white;
+}
+.heading .info #contactinfo {
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 500;
+
+}
+  
+
+/* message form */
+.messageform {
+    width: 70%;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 8px rgba(0,0,0,.07);
+    margin-left: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.messageform .form {
+    width: 80%;
+    margin: 50px auto;
+}
+.messageform input , .messageform #inputbox {
+    width: 100%;
+    color: white;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-top: 10px;
+    border: 2px solid white;
+    outline: none;
+    background-color: transparent;
+}
+.messageform button {
+    padding: 10px 50px;
+    margin-top: 20px;
+    font-size: 14px;
+    color: white;
+    letter-spacing: 1px;
+    background: linear-gradient(to right , transparent 50% , rgb(3, 180, 3) 50%);
+    background-size: 200%;
+    background-position: left;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: .3s;
+}
+.messageform button:hover {
+    background-position: right;
+}
+
+/* contact mobile view */ 
+@media only screen and (max-width : 700px) {
+    .contact {
+        padding: 50px 0;
+    }
+    .contactcontanner {
+        width: 95%;
+        display: block;
+    }
+    .contactcontanner .contanner {
+        width: 100%;
+    }
+    /* message form */
+    .messageform {
+        width: 100%;
+        margin-left: 0px;
+        padding: 1px 0;
+    }
+    .messageform .form {
+        width: 93%;
+        margin: 50px auto;
+    }
+}
+/****************************** FOOTER **************************/
+footer {
+    color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    box-sizing: border-box;
+    background-color: black;
+    text-align: center;
+    padding: 15px 0;
+}
+footer p {
+    font-size: 14px;
+}
+footer a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+}
+footer a:hover {
+    color: white;
+}
+footer a strong {
+    font-size: 16px;
+}
+
+/* mobile view of footer */
+@media only screen and (max-width : 700px){
+    footer {
+        background-color:black ;
+        left: 0%;
+        transform: translate(-0%);    
+        padding: 15px 6%;
+    }
+} 
+
+</style>
+
+<body>
+    <div class="nevbar" id="nevbar">
+        <div class="logo">
+            <a href="index.html" id="logo"><h1><span>P</span>⁷⁸ - <span>KHUSHI</span> DONATION</h1></a>
+        </div>
+        <div class="menu" id="menu">
+            <ul>
+                <li><a id="home" href="index.html">Home</a></li>
+                <li><a href="#explore">Explore</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a id="about" href="CV.html" target="blank">About me</a></li>
+                <li><a id="donate" href="https://rzp.io/l/Lp5F73Sxif" target="blank">Donate</a></li>
+            </ul>
+        </div>
+        <div class="menuicon">
+            <i id="menuicon" onclick="togglemenu()" class="fas fa-chevron-circle-down"> <span>MENU</span></i>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="cover">
+
+        <div class="information">
+            <h1>-</h1>
+            <h3>Raising Hope</h3>
+            <h2>To help brighten a child's</h2>
+            <h1> <span>FUTURE</span> </h1>
+            <h3> <span>The Khushi Foundation Charity</span> </h3><br>
+            <h3 > <span style="color: rgb(1, 161, 1);"><i>(Anshu Chaurasia)</i></span> </h3>
+            <h1>-</h1>
+            <a href="#explore"><button>EXPLORE</button></a>
+            <a href="https://rzp.io/l/Lp5F73Sxif" target="blank"><button>DONATE</button></a>
+        </div>
+
+    </div>
+
+    <div class="explore" id="explore"></div>
+
+    <div class="about">
+        <div class="imgcontanner" >
+            <div class="aboutimg"></div>
+        </div>
+        <div class="aboutcontent" style="border-radius: 150px 0 0 150px ;">
+            <h5>_</h5>
+            <h1>Why Donate?</h1>
+            <p>This pandemic has forced over 6 Million* children to drop off from school. Your contribution can help them reshape their lives by providing for their education.</p>
+            <p>We help them get access to learning materials, internist connectivity, laptops, and smartphones to keep the learning alive!</p>
+            <a href="https://rzp.io/l/Lp5F73Sxif" target="black">DONATE</a>
+            <br>
+            <br>
+            <h5>_</h5>
+
+        </div>
+    </div>
+
+    <!-- ----------------------------------  Service -------------------------------------- -->
+    <div class="service" id="service">
+
+        <h5>SERVICES</h5>
+        <h1>Our Latest Services</h1>
+
+        <div class="details">
+
+            <div class="info">
+
+                <div class="logo"><i class="fas fa-book-reader"></i></div>
+                <p id="head">What we do</p>
+                <p>We help empower underprivileged children with quality education.</p>
+
+            </div>
+
+
+
+            <div class="info" data-aos="fade-up">
+
+                <div class="logo"><i class="fas fa-book-open"></i></div>
+                <p id="head">How we do it</p>
+                <p>We helps these children continue their education through digital initiatives.</p>
+            </div>
+
+
+
+
+            <div class="info" data-aos="fade-up">
+
+                <div class="logo"><i class="fas fa-book"></i></div>
+                <p id="head">Make a difference</p>
+                <p>₹ 3,000 can help a child build a life and add wings to their dreams</p>
+
+            </div>
+
+
+
+
+            <div class="info" data-aos="fade-up">
+
+                <div class="logo"><i class="fas fa-chart-line"></i></div>
+                <p id="head">Lives benefitted so far</p>
+                <p>Over 50k+ children have benefitted so far with thousands more to go</p>
+
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+
+
+    <!---------------------------- contact ------------------- -->
+
+    <div class="contact" id="contact">
+        <h1>CONTACT ME</h1>
+        <br>
+        <div class="contactcontanner">
+
+            <div class="contanner">
+                <div class="heading">
+                    <div class="icon"><i class="far fa-map"></i></div>
+                    <div class="info">
+                        <p>Address : </p>
+                        <p id="contactinfo"> 78/300-H, ADARSH VIHAR, RING ROAD, LUCKNOW, UTTAR PRADESH – 226017</p>
+                    </div>
+                </div>
+
+                <div class="heading">
+                    <div class="icon"><i class="fas fa-phone-alt"></i></div>
+                    <div class="info">
+                        <p>Phone : </p>
+                        <p id="contactinfo">+91 63924 57271 <br> +91 85460 32460</p>
+                    </div>
+                </div>
+
+                <div class="heading">
+                    <div class="icon"><i class="far fa-envelope"></i></div>
+                    <div class="info">
+                        <p>Email : </p>
+                        <p id="contactinfo">Khushidonation7815@gmail.com <br>
+                        Anshuchaurasia210@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="messageform">
+                <div class="form">
+                    <form action="https://script.google.com/macros/s/AKfycbx-ui-3HDamEYnI02UHFk-YeOzagkWzVzZL2b5bCKtC2RdpLN-xRyCXM77y1fgRmjAn7A/exec" method="POST">
+
+                        <style>
+                            ::placeholder {color: rgba(255, 255, 255, 0.7);}
+                        </style>
+
+                        <input type="text" name="name" placeholder="NAME" required>
+                        <input type="email" name="email" placeholder="EMAIL" required>
+                        <input type="text" name="subject" placeholder="SUBJECT" required>
+                        <textarea type="message" name="message" id="inputbox"  cols="30" rows="5" placeholder="MESSAGE" required></textarea>
+                        <!-- SEND MESSAGE -->
+                        
+                        <button class="send" type="submit" onclick="alert('Thanx for contacting us...! #khushi_donationP78')"> <a style="text-decoration: none; color: #fff; " type="submit" id="submit" href="mailto: khushidonation7815@gmail.com"> SEND MESSAGE <i class="fa fa-chevron-right" aria-hidden="true"></i></a></button>
+                    </form>
+
+                    <script data-cfasync="false" type="text/javascript">
+    
+                        (function() {
+                       function validEmail(email) {
+                         var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+                         return re.test(email);
+                       }
+                     
+                       function validateHuman(honeypot) {
+                         if (honeypot) {
+                           console.log("Robot Detected!");
+                           return true;
+                         } else {
+                           console.log("Welcome Human!");
+                         }
+                       }
+                       function getFormData(form) {
+                         var elements = form.elements;
+                     
+                         var fields = Object.keys(elements).filter(function(k) {
+                               return (elements[k].name !== "honeypot");
+                         }).map(function(k) {
+                           if(elements[k].name !== undefined) {
+                             return elements[k].name;
+                           }else if(elements[k].length > 0){
+                             return elements[k].item(0).name;
+                           }
+                         }).filter(function(item, pos, self) {
+                           return self.indexOf(item) == pos && item;
+                         });
+                     
+                         var formData = {};
+                         fields.forEach(function(name){
+                           var element = elements[name];
+                           formData[name] = element.value;
+                           if (element.length) {
+                             var data = [];
+                             for (var i = 0; i < element.length; i++) {
+                               var item = element.item(i);
+                               if (item.checked || item.selected) {
+                                 data.push(item.value);
+                               }
+                             }
+                             formData[name] = data.join(', ');
+                           }
+                         });
+                     
+                         // add form-specific values into the data
+                         formData.formDataNameOrder = JSON.stringify(fields);
+                         formData.formGoogleSheetName = form.dataset.sheet || "KDContact"; // default sheet name
+                         formData.formGoogleSendEmail = form.dataset.email || ""; // no email by default
+                     
+                         console.log(formData);
+                         return formData;
+                       }
+                     
+                       function handleFormSubmit(event) {  
+                         event.preventDefault();           
+                         var form = event.target;
+                         var data = getFormData(form);         
+                         if( data.email && !validEmail(data.email) ) {   
+                           var invalidEmail = form.querySelector(".email-invalid");
+                           if (invalidEmail) {
+                             invalidEmail.style.display = "block";
+                             return false;
+                           }
+                         } else {
+                           disableAllButtons(form);
+                           var url = form.action;
+                           var xhr = new XMLHttpRequest();
+                           xhr.open('POST', url);
+                           xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+                           xhr.onreadystatechange = function() {
+                               console.log(xhr.status, xhr.statusText);
+                               console.log(xhr.responseText);
+                               var formElements = form.querySelector(".form-elements")
+                               if (formElements) {
+                                 formElements.style.display = "none"; // hide form
+                               }
+                               var thankYouMessage = form.querySelector(".thankyou_message");
+                               if (thankYouMessage) {
+                                 thankYouMessage.style.display = "block";
+                               }
+                               return;
+                           };
+                           var encoded = Object.keys(data).map(function(k) {
+                               return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
+                           }).join('&');
+                           xhr.send(encoded);
+                         }
+                       }
+                       
+                       function loaded() {
+                         console.log("Contact form submission handler loaded successfully.");
+                         var forms = document.querySelectorAll("form.gform");
+                         for (var i = 0; i < forms.length; i++) {
+                           forms[i].addEventListener("submit", handleFormSubmit, false);
+                         }
+                       };
+                       document.addEventListener("DOMContentLoaded", loaded, false);
+                     
+                       function disableAllButtons(form) {
+                         var buttons = form.querySelectorAll("button");
+                         for (var i = 0; i < buttons.length; i++) {
+                           buttons[i].disabled = true;
+                         }
+                       }
+                     })();
+                     
+                     
+                       </script>
+                     
+
+                </div>
+            </div>
+
+        </div>          
+    </div>
+
+
+
+
+
+    <!-- ------------------------------  Counter  ---------------------------------- -->
+    <div class="contercontent">
+
+    <div class="counterbox one">
+        <div class="information" data-aos="fade-down">
+            <div class="number"><p style="color: rgba(255, 255, 255, 0.9);">  8 </p></div>
+            <div class="text"><p style="color: rgba(255, 255, 255, 0.7);">Year <br> Experienced</p></div>
+        </div>
+    </div>
+
+
+
+    <div class="counterbox">
+        <div class="information" data-aos="fade-down">
+            <div class="number"><p>4,875</p></div>
+            <div class="text"><p>children <br> enrolled</p></div>
+        </div>
+    </div>
+
+
+
+    <div class="counterbox">
+        <div class="information" data-aos="fade-down">
+            <div class="number"><p>58</p></div>
+            <div class="text"><p>Mission <br> Education Centres</p></div>
+        </div>
+    </div>
+
+
+
+    <div class="counterbox">
+        <div class="information" data-aos="fade-down">
+            <div class="number"><p>21</p></div>
+            <div class="text"><p>States <br> Across India</p></div>
+        </div>
+    </div>
+
+    </div>
+
+
+
+    <!-- <div class="topspace"></div> -->
+    <footer>
+        <p>&copy 2023 Made with ❤️ By <a href="CV.html" target="black"><strong> Anshu Chaurasia</strong></a> | <a href="https://thesparksfoundationsingapore.org/" target="blank"><strong>The Khushi Foundation</strong></a></p>
+    </footer>
+    <!-- scripts  -->
+    <script>
+        // drop down menu script
+        var menu = document.getElementById("menu");
+        menu.style.maxHeight = "0px";
+        function togglemenu() {
+            if (menu.style.maxHeight == "0px") {
+                menu.style.maxHeight = "390px";
+            }
+            else {
+                menu.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+</body>
+</html> 

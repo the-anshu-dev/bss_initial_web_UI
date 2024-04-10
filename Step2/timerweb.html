@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Website Activation</title>
+    <style>
+      *
+      {
+        background-color: #212428;
+        text-transform: capitalize;
+      }
+      
+      #content {
+        display: none;
+      }
+
+      .mid, .midd
+      {
+        align-items: center;
+        justify-content: center;
+        margin-top: 300px;
+        background-color: #212428;
+
+      }
+    </style>
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+  <body>
+    
+
+    <!-- Out of time limit ....  -->
+
+    <div id="message" class="mid">
+
+      <h1 class="text-center text-white"> Go Back <br>
+       Option is <span class="text-warning" style="font-family:cursive;">DISABLE</span> after 9am to 10am</h1>
+      <p class="text-center">
+       <a href="Dark.html" target="_self" class="btn btn-outline-secondary  px-4" style="letter-spacing: 2px;"><span class="text-white" style="background: transparent;">Back</span></a>
+      </p>
+   </div>
+
+   <!-- ..........................................  -->
+
+
+
+   <!-- Time Script Boundation (24hr System) ...  -->
+
+    <script>
+      var now = new Date();
+      var hour = now.getHours();
+      if (hour >= 9 && hour < 10) {
+
+         window.open("ComingSoon/text.html","_self");
+         document.getElementById("message").style.display = "none";
+
+
+
+      } 
+      else 
+      {
+        document.getElementById("message").style.display = "block";
+      }
+    </script>
+
+    <!-- ..........................................  -->
+
+    <!-- bootstrap scripting...  -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+  </body>
+</html>
